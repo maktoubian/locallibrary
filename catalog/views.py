@@ -16,12 +16,13 @@ class index(generic.TemplateView):
         return context
 
 class BookListView(generic.ListView):
-    model = models.Book
-    template_name= 'catalog/book_list.html'
+    model=models.Book
+    template_name='catalog/book_list.html'
 
 class BookDetailView(generic.DetailView):
     model = models.Book
-    template_name= 'catalog/book_detail.html'
+    template_name='catalog/book_detail.html'
+
 # def index(request):
 #     """
 #     View function for home page of site.
